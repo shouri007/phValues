@@ -3,7 +3,7 @@ var config = require('./server/configure');
 var path = require('path');
 var pg = require('pg');
 
-var port = 3000 || process.env.PORT;
+var port = process.env.PORT || 3000;
 var app = express();
 app = config(app);
 
