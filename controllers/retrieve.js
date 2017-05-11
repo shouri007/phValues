@@ -13,6 +13,6 @@ module.exports = function(req,res){
 	});
 	query.on('end',function(){
 		console.log(results);
-		res.send("done");
+		res.render('index');
 	});
 }
