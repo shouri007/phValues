@@ -1,12 +1,14 @@
 $('document').ready(function(){
-	
-    var url = "http://phvalues.herokuapp.com/";
-    $.ajax({
+	getData();
+    setInterval(getData,100000);
+});
+
+function getData(){
+
+	var url = "http://localhost:3000/";
+	$.ajax({
             method:'GET',
             url:url,
-            contentType:"application/json",
-            success:function(data){
-                console.log(data);
-            }
+            contentType:"application/json"
     });
-})
+}
