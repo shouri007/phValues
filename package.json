@@ -20,7 +20,7 @@
     "nodemon": "^1.11.0",
     "npm-run-path": "^2.0.2",
     "package-json": "^4.0.1",
-    "serve-favicon": "^2.4.2",
-    "pg": "~6.1.5"
+    "pg": "~6.1.5",
+    "serve-favicon": "^2.4.2"
   }
 }
