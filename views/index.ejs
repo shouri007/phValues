@@ -6,12 +6,17 @@
 </head>
 <body>
 	<h1>pH Values observed so far</h1>
-	<ul>
+	<table>
+	<tr>
+	    <th>pH Values</th>
+	    <th>Date added</th> 
+  	</tr>
     <% for(var i = 0; i < results.length; i++) { %>
-        <li>
-                <%= results[i].value + " " + results[i].date_added.toString() %>
-        </li>
+        <tr>
+                <td><% results[i].value %></td>
+                <td> <% results[i].date_added.toString() %></td>
+        </tr>
     <% } %>
-</ul>
+	</table>
 </body>
 </html>
