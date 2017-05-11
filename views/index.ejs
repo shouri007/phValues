@@ -2,10 +2,16 @@
 <html>
 <head>
 	<title>pH values</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/javascripts/client.js"></script>	
 </head>
 <body>
-	phValues to be displayed.
+	<h1>pH Values observed so far</h1>
+	<ul>
+    <% for(var i = 0; i < results.length; i++) { %>
+        <li>
+                <%= results[i].value + " " + results[i].date_added.toString() %>
+        </li>
+    <% } %>
+</ul>
 </body>
 </html>
